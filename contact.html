@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+	
+body {
+	margin:0;
+    background-image:url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}		
+	
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: green;
+
+}
+
+li {
+  float: right;
+    border-right:2px solid #bbb;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #4CAF50;
+}
+
+
+
+
+ .active {
+  background-color: #4CAF50;
+}
+
+  
+  .sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #176534;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ 
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: white;
+
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  text-decoration:none;
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+  
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 1px 0;
+  transition: 0.4s;
+}
+.bar4, .bar5 {
+  width: 5px;
+  height: 18px;
+  background-color: white;
+  margin: 1px 0;
+  transition: 0.4s;
+}
+
+.supAekss .bar4{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.supAekss .bar5{
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar1 {
+}
+.change .bar2 {
+}
+.change .bar3 {
+}
+
+li.sidebtn{
+	float:left;
+
+}
+
+@keyframes logo {
+
+10% {transform: rotateY(1000deg);}
+100% {transform: rotateY(360deg);}
+
+}
+
+.rotate {
+
+	border-style:solid;
+	border-width:4px;
+	vertical-align:top;
+			
+			margin:auto 0px auto 3px;
+			animation: 20s logo infinite;
+			border-radius: 50%;
+			background-color:white;
+
+}
+
+.ment {
+background-color:#1C9843;
+padding:1px;
+margin:0;
+font-size:20px;
+opacity:.5;
+}
+
+.ment:hover {
+  opacity:1;
+}
+
+		@keyframes slidy{
+		0% {left: 0%;}
+		20%{left: 0%;}
+		25%{left: -100%;}
+		45%{left: -100%;}
+		50%{left: -200%;}
+		70%{left: -200%;}
+		75%{left: -300%;}
+		95%{left: -300%;}
+		100%{left: -400%;}
+		}
+
+	}
+	div#slider{
+		overflow:hidden;
+	}
+	div#slider figure img{
+		width: 20%; float:left; height:550px;
+	}
+div#slider figure{
+	position:relative;
+	width:500%;
+	margin:0;
+	left:0;
+	text-align:left;
+	font-size:0;
+	animation:20s slidy infinite;
+	height:550px;
+	}
+
+.lobg{
+background-image:url("lobg.png");
+}
+
+.header {
+	background-position: 100% 100%;
+	margin:0;
+	}
+	body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #158037;
+  padding: 20px;
+  width:50%
+  
+}
+
+.footer {
+  background-color: #1C9843;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  }
+
+</style>
+	<head>
+<title>Alitagtag Senior High School</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	</head>
+
+	<body>
+	
+
+	<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+
+<ul>
+		
+		<li><a href="Page2.html">About Us</a></li>
+		<li><a href="Page1.html">Gallery</a></li>		
+		<li><a href="index.html">Home</a></li>
+		
+		<li class = "sidebtn">
+		
+		<div id="mySidebar" class="sidebar">
+		
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" ><</a>
+  
+      <a href="miss.html">Mission,Vision and Core Values</a>
+      <a class="active">Student Application Requirements</a>
+      <a href="tracks.html">Track we offer</a>
+</div>
+
+<div id="main">
+
+  <button class="openbtn" onclick="openNav()">
+  
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+	
+	</button>  
+</div>
+		
+	
+ </li>
+  
+</ul>
+
+<table>				
+				
+	<tr>
+<td class= "lobg">
+			<img src = "logo.png" align="left" class="rotate" height = "100" width = "100">
+</td>
+
+<td class="header">	
+			<img src = "banner.png" height = "110" width= "100%">
+</td>
+
+	
+</tr>
+
+		
+</table>
+	
+<hr size="20px" color = "#158037">
+
+
+
+
+<h1 align = "center">Student Registration</h1>
+<br>
+<br>
+
+
+<center>
+
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Municipality</label>
+    <select id="country" name="country">
+      <option value="australia">Alitagtag</option>
+      <option value="canada">Cuenca</option>
+      <option value="usa">Muzon</option>
+    </select>
+
+    
+    <b style="height:200px">Requirements :</b>
+	<br>
+	<b>NSO</b>
+	<br>
+	<b>Card</b>	
+	<br>
+	<b>Registration Fee</b>	
+		
+	<br>
+	<br>
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="footer">
+		
+		<p><font align="center"><a href="Page2.html">About Us</a> | <a href="contact.html">Contact Us</a></p>
+		<b>Copyright 2017. All Rights Reserved De La Salle University | Alitagtag Batangas</b>
+
+</div> 
+
+</body>
+</html>
